@@ -1,0 +1,66 @@
+#c {
+    position: fixed;
+    transition: 400ms;
+    z-index: 0;
+    image-rendering: optimizeQuality;
+}
+
+div.title:hover ~ #c {
+    transform: scale(1.1);
+}
+
+* {
+    overflow: hidden;
+}
+
+div.title {
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    transition: 400ms;
+    font-size: 6vw;
+    user-select: none;
+    width: max-content;
+}
+
+div.title:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+div.title > span {
+    transition: 400ms;
+}
+
+div.title:hover > span {
+    font-size: 150%;
+    text-shadow: rgb(255, 204, 0) 0.25vh 0 2.5vh;
+}
+
+div.description {
+    position: fixed;
+    left: 50vw;
+    top: 56vh;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: 400ms;
+    user-select: none;
+    font-size: 2vh;
+}
+
+div.title:hover ~ div.description {
+    top: 58vh;
+    font-size: 2.4vh;
+}
+
+div.description > span:before {
+    content: "click on the leftmost sidebar to get started";
+}
+
+@media (pointer:none), (pointer:coarse) {
+    div.description > span:before {
+        content: "tap the arrows to learn more";
+    }
+}

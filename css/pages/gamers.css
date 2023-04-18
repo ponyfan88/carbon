@@ -1,0 +1,143 @@
+div.bigpower-number {
+    font-size: 30vh;
+    margin-top: -8vh;
+    margin-bottom: -8vh;
+}
+
+div.bigpower-unit {
+    margin-top: -13.5vh;
+    margin-bottom: -3vh;
+    font-size: 8.8vh;
+}
+
+div.bigpower-desc {
+    margin-left: 1vh;
+}
+
+table {
+    border: 0.5vh solid #E1DCDC;
+    margin-left: 1vh;
+    border-collapse: collapse;
+}
+
+td, tr, th {
+    border: 0.5vh solid #E1DCDC;
+    padding: 1vh;
+    border-radius: 1vh;
+    font-size: 3vh;
+}
+
+th {
+    background-color: #e1dcdc3a;
+}
+
+@media (max-aspect-ratio: 1/1) { /* on vertically oriented devices */
+    div.bigpower-number {
+        font-size: 56vw;
+        margin-top: -17vw;
+        margin-bottom: -17vw;
+        text-align: center;
+    }
+    
+    div.bigpower-unit {
+        margin-top: -25vw;
+        font-size: 16vw;
+        text-align: center;
+    }
+
+    div.bigpower-desc {
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        text-align: justify;
+    }
+
+    div.bigpower-pie-labelz {
+        display: none;
+    }
+
+    table {
+        margin: 1vh;
+    }
+}
+
+@media (min-aspect-ratio: 1/1) { /* on horizontally oriented devices */
+    div.bigpower-pie {
+        height: 30vh;
+        margin-top: 1vh;
+        aspect-ratio: 1;
+        background-image: conic-gradient(transparent, #E1DCDC 0.5deg, #E1DCDC 36deg, transparent 37deg, #e1dcdc3a 37deg, #e1dcdc3a 360deg, transparent 360deg);
+        border-radius: 50%;
+    }
+
+    div.bigpower-top {
+        display: grid;
+        grid-auto-flow: column;
+        width: max-content;
+        gap: 1vh;
+        margin: auto;
+    }
+
+    div.bigpower-desc {
+        font-size: 3.5vh;
+    }
+
+    div.bigpower-pie-labelz {
+        line-height: 0;
+        position: absolute;
+        font-size: 2vh;
+        transform: translate(32vh,-21vh);
+    }
+
+    div.bigpower-pie-labelz > div {
+        height: 0.5vh;
+        width: 15vh;
+        position: absolute;
+        background-color: #E1DCDC;
+        transform: translate(-16vh,-0.15vh);
+    }
+
+    div.bigpower-pie-labelz > span {
+        display: none; /*hide ( ___ ) on mobile*/
+    }
+
+    table {
+        margin: auto;
+    }
+
+    div.bigpower-desc {
+        margin: auto;
+        text-align: justify;
+        width: 60vw;
+    }
+}
+
+@media (min-aspect-ratio: 21/9) { /* ULTRAWIDE */
+
+    table {
+        width: calc(100vw - 2vh);
+        margin: auto;
+    }
+
+    .cons::after {
+        content:'❌';
+    }
+
+    .pros::after {
+        content:'✔️';
+
+    }
+
+    .energy::after {
+        content:'⚡';
+    }
+
+    div.bigpower-top {
+        margin: auto;
+    }
+
+    div.bigpower-desc {
+        margin: auto;
+        text-align: center;
+    }
+}

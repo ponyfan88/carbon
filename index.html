@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="stylesheet" href="../css/parts/folderView.css" />
+        <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+        <title>hi hungry</title>
+    </head>
+    <body>
+        <div id="folderView">
+            <div id="innerFolderView">
+                <h3 id="tree_label">INDEX</h3>
+                <ul role="tree" aria-labelledby="tree_label">
+                    <li
+                        role="treeitem"
+                        aria-selected="false"
+                        class="doc"
+                        onclick="page('default')"
+                    >
+                        Saving the planet
+                    </li>
+                    <li
+                        role="treeitem"
+                        aria-expanded="false"
+                        aria-selected="false"
+                    >
+                        <span> At home </span>
+                        <ul role="group">
+                            <li
+                                role="treeitem"
+                                aria-selected="false"
+                                class="doc"
+                                onclick="page('generalTips')"
+                            >
+                                General tips
+                            </li>
+                            <li
+                                role="treeitem"
+                                aria-selected="false"
+                                class="doc"
+                                onclick="page('gamers')"
+                            >
+                                For gamers
+                            </li>
+                        </ul>
+                    </li>
+                    <li
+                        role="treeitem"
+                        aria-selected="false"
+                        class="doc"
+                        onclick="page('school')"
+                    >
+                        At school
+                    </li>
+                    <li
+                        role="treeitem"
+                        aria-selected="false"
+                        class="doc"
+                        onclick="page('work')"
+                    >
+                        At work
+                    </li>
+                    <li
+                        role="treeitem"
+                        aria-expanded="false"
+                        aria-selected="false"
+                    >
+                        <span> Seasonally </span>
+                        <ul role="group">
+                            <li
+                                role="treeitem"
+                                aria-selected="false"
+                                class="doc"
+                                onclick="page('fall')"
+                            >
+                                Fall
+                            </li>
+                            <li
+                                role="treeitem"
+                                aria-selected="false"
+                                class="doc"
+                                onclick="page('summer')"
+                            >
+                                Summer
+                            </li>
+                            <li
+                                role="treeitem"
+                                aria-selected="false"
+                                class="doc"
+                                onclick="page('spring')"
+                            >
+                                Spring
+                            </li>
+                            <li
+                                role="treeitem"
+                                aria-selected="false"
+                                class="doc"
+                                onclick="page('winter')"
+                            >
+                                Winter
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="https://gifcities.org/?q=dinosaur"><img class="dino"></a>
+
+            <script src="../js/parts/folderView.js"></script>
+        </div>
+        <button id="expandFolderViewButton">>></button>
+
+        <iframe src="pages/gamers.html" id="pageView"></iframe>
+
+        <script src="js/shared.js"></script>
+        <script src="index.js"></script>
+
+        <div class="debug1"></div>
+        <div class="debug2"></div>
+    </body>
+</html>

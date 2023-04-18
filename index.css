@@ -1,0 +1,76 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #313131;
+    margin: 0;
+
+    overflow: hidden;
+}
+
+
+#folderView {
+    position: fixed;
+    z-index: 100;
+    width: 0vw;
+    height: 100vh;
+    
+    border-right: 1vh #E1DCDC solid;
+
+    overflow: hidden;
+
+    transition: width 400ms;
+    background-color: #313131;
+}
+
+#innerFolderView {
+    padding-left: 2vh;
+}
+
+#pageView {
+    position: fixed;
+    width: calc(100vw - 1vh + 1px);
+    left: calc(1vh - 1px);
+    height: 100vh;
+
+    border: none;
+}
+
+#expandFolderViewButton {
+    position: fixed;
+    left: 0;
+    padding-left: 1vh;
+    top: 1vh;
+    z-index: 101;
+
+    font-size: 2vh;
+
+    transition: left 400ms;
+
+    background-color: #E1DCDC;
+    border: 0;
+    width: 5vh;
+    height: 2.5vh;
+    overflow: hidden;
+    border-top-right-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+}
+
+/*
+
+div.debug1 {
+    position: fixed;
+    top: 50vh;
+    width: 100vw;
+    height: 1px;
+    background-color: red;
+}
+
+div.debug2 {
+    position: fixed;
+    left: 50vw;
+    height: 100vh;
+    width: 1px;
+    background-color: red;
+}
+
+*/

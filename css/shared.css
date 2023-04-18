@@ -1,0 +1,69 @@
+/*#region font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@900&display=swap');
+
+body {
+    font-family: 'Heebo', 'Roboto', sans-serif;
+    color: #E1DCDC;
+}
+
+/*#endregion font*/
+
+/*#region background*/
+
+html, body {
+    background-color: #313131;
+    margin: 0;
+}
+
+/*#endregion background*/
+
+/*#region fade in on load*/
+
+* {
+    animation: entrance 750ms; 
+}
+
+@keyframes entrance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*#endregion fade in on load*/
+
+/*#region force left align*/
+
+.leftalign {
+    display: inline-block;
+}
+
+/*#endregion force left align*/
+
+/*#region pretty links*/
+
+a {
+    color: #E1DCDC;
+    text-decoration: none;
+    transition: color 400ms;
+}
+
+a:hover {
+    color:white;
+}
+
+/*#endregion pretty links*/
+
+
+
+/*
+
+##===============================##
+|| guru meditation; keep it calm ||
+##===============================##
+
+*/
