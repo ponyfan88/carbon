@@ -20,7 +20,9 @@ table {
     border-collapse: collapse;
 }
 
-td, tr, th {
+td,
+tr,
+th {
     border: 0.5vh solid #E1DCDC;
     padding: 1vh;
     border-radius: 1vh;
@@ -31,14 +33,16 @@ th {
     background-color: #e1dcdc3a;
 }
 
-@media (max-aspect-ratio: 1/1) { /* on vertically oriented devices */
+@media (max-aspect-ratio: 1/1) {
+
+    /* on vertically oriented devices */
     div.bigpower-number {
         font-size: 56vw;
         margin-top: -17vw;
         margin-bottom: -17vw;
         text-align: center;
     }
-    
+
     div.bigpower-unit {
         margin-top: -25vw;
         font-size: 16vw;
@@ -61,7 +65,9 @@ th {
     }
 }
 
-@media (min-aspect-ratio: 1/1) { /* on horizontally oriented devices */
+@media (min-aspect-ratio: 1/1) {
+    /* on horizontally oriented devices */
+
     div.bigpower-pie {
         height: 30vh;
         margin-top: 1vh;
@@ -86,19 +92,20 @@ th {
         line-height: 0;
         position: absolute;
         font-size: 2vh;
-        transform: translate(32vh,-21vh);
+        transform: translate(32vh, -21vh);
     }
 
-    div.bigpower-pie-labelz > div {
+    div.bigpower-pie-labelz>div {
         height: 0.5vh;
         width: 15vh;
         position: absolute;
         background-color: #E1DCDC;
-        transform: translate(-16vh,-0.15vh);
+        transform: translate(-16vh, -0.15vh);
     }
 
-    div.bigpower-pie-labelz > span {
-        display: none; /*hide ( ___ ) on mobile*/
+    div.bigpower-pie-labelz>span {
+        display: none;
+        /*hide surrounding parenthesis on mobile*/
     }
 
     table {
@@ -108,36 +115,32 @@ th {
     div.bigpower-desc {
         margin: auto;
         text-align: justify;
-        width: 60vw;
+        width: 90vh;
     }
 }
 
-@media (min-aspect-ratio: 21/9) { /* ULTRAWIDE */
+@media (min-aspect-ratio: 21/9) {
+    /* ULTRAWIDE */
 
     table {
-        width: calc(100vw - 2vh);
+        width: calc(50vw - 2vh);
         margin: auto;
     }
 
     .cons::after {
-        content:'❌';
+        content: '❌';
     }
 
     .pros::after {
-        content:'✔️';
+        content: '✔️';
 
     }
 
     .energy::after {
-        content:'⚡';
+        content: '⚡';
     }
 
     div.bigpower-top {
         margin: auto;
-    }
-
-    div.bigpower-desc {
-        margin: auto;
-        text-align: center;
     }
 }
