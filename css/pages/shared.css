@@ -1,3 +1,7 @@
+html {
+    overflow-x: hidden;
+}
+
 div.title {
     font-size: 10vh;
     text-align: center;
@@ -14,20 +18,23 @@ div.page-horizontal-line {
     background-color: #E1DCDC;
 }
 
+/*
+
 @media (max-aspect-ratio: 1/1) { /* on vertically oriented devices */
-    div.title {
+/*    div.title {
 
     }
 }
 
 @media (min-aspect-ratio: 1/1) { /* on horizontally oriented devices */
-    div.title {
+/*    div.title {
 
     }
 }
 
-@media (min-aspect-ratio: 21/9) { /* ULTRAWIDE */
+*/
 
+@media (min-aspect-ratio: 21/9) { /* ULTRAWIDE */
     div.title {
         text-align: center;
     }

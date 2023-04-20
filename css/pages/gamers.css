@@ -15,9 +15,11 @@ div.bigpower-desc {
 }
 
 table {
-    border: 0.5vh solid #E1DCDC;
     margin-left: 1vh;
     border-collapse: collapse;
+    border-radius: 1vh;
+    border-spacing: 0px;
+    border: 1vh solid #E1DCDC;
 }
 
 td,
@@ -25,12 +27,15 @@ tr,
 th {
     border: 0.5vh solid #E1DCDC;
     padding: 1vh;
-    border-radius: 1vh;
     font-size: 3vh;
 }
 
 th {
     background-color: #e1dcdc3a;
+}
+
+div.bigpower-pie-labelz {
+    display: none;
 }
 
 @media (max-aspect-ratio: 1/1) {
@@ -63,18 +68,33 @@ th {
     table {
         margin: 1vh;
     }
+
+    .undervolting {
+        width: 90vw;
+        margin: auto;
+        font-size: 5vh;
+        text-align: center;
+    }
+
+    .undervolting>iframe {
+        width: 100%;
+        aspect-ratio: calc(16/9);
+    }
+
+    .energy::before {
+        content: 'method';
+    }
+
+    td,
+    tr,
+    th {
+        font-size: 2vh;
+        text-align: center;
+    }
 }
 
 @media (min-aspect-ratio: 1/1) {
     /* on horizontally oriented devices */
-
-    div.bigpower-pie {
-        height: 30vh;
-        margin-top: 1vh;
-        aspect-ratio: 1;
-        background-image: conic-gradient(transparent, #E1DCDC 0.5deg, #E1DCDC 36deg, transparent 37deg, #e1dcdc3a 37deg, #e1dcdc3a 360deg, transparent 360deg);
-        border-radius: 50%;
-    }
 
     div.bigpower-top {
         display: grid;
@@ -88,11 +108,40 @@ th {
         font-size: 3.5vh;
     }
 
+    table {
+        margin: auto;
+    }
+
+    div.bigpower-desc {
+        margin: auto;
+        text-align: justify;
+        width: 90vh;
+    }
+
+    .undervolting {
+        width: 70vh;
+        margin: auto;
+        font-size: 5vh;
+        text-align: center;
+    }
+
+    .undervolting>iframe {
+        width: 70vh;
+        aspect-ratio: calc(16/9);
+    }
+
+    .energy::before {
+        content: 'way to save energy';
+    }
+}
+
+@media (min-aspect-ratio: 33/20) {
     div.bigpower-pie-labelz {
         line-height: 0;
         position: absolute;
-        font-size: 2vh;
+        font-size: 1.5vw;
         transform: translate(32vh, -21vh);
+        display: block;
     }
 
     div.bigpower-pie-labelz>div {
@@ -103,19 +152,17 @@ th {
         transform: translate(-16vh, -0.15vh);
     }
 
+    div.bigpower-pie {
+        height: 30vh;
+        margin-top: 1vh;
+        aspect-ratio: 1;
+        background-image: conic-gradient(transparent, #E1DCDC 0.5deg, #E1DCDC 36deg, transparent 37deg, #e1dcdc3a 37deg, #e1dcdc3a 360deg, transparent 360deg);
+        border-radius: 50%;
+    }
+
     div.bigpower-pie-labelz>span {
         display: none;
         /*hide surrounding parenthesis on mobile*/
-    }
-
-    table {
-        margin: auto;
-    }
-
-    div.bigpower-desc {
-        margin: auto;
-        text-align: justify;
-        width: 90vh;
     }
 }
 
@@ -133,7 +180,6 @@ th {
 
     .pros::after {
         content: '✔️';
-
     }
 
     .energy::after {
@@ -142,5 +188,16 @@ th {
 
     div.bigpower-top {
         margin: auto;
+    }
+}
+
+@media (max-aspect-ratio: 1/2) {
+    /* ULTRATALL */
+
+    .undervolting {
+        width: 90vw;
+        margin: auto;
+        font-size: 4vh;
+        text-align: center;
     }
 }

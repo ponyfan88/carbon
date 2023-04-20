@@ -1,0 +1,21 @@
+.main-largest-printer {
+    width: 90vw;
+    margin: auto;
+    position: absolute;
+}
+
+.main-largest-printer-text {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    left: 32vw;
+    top: 46vw;
+    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(9deg) rotateY(-8deg) rotateZ(-10deg);
+    font-size: 1vw;
+    width: 37vw;
+}
+
+.printer-text-container {
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+}
