@@ -19,13 +19,13 @@ table {
     border-collapse: collapse;
     border-radius: 1vh;
     border-spacing: 0px;
-    border: 1vh solid #E1DCDC;
+    border: 1vh solid var(--text-color);
 }
 
 td,
 tr,
 th {
-    border: 0.5vh solid #E1DCDC;
+    border: 0.5vh solid var(--text-color);
     padding: 1vh;
     font-size: 3vh;
 }
@@ -148,7 +148,7 @@ div.bigpower-pie-labelz {
         height: 0.5vh;
         width: 15vh;
         position: absolute;
-        background-color: #E1DCDC;
+        background-color: var(--text-color);
         transform: translate(-16vh, -0.15vh);
     }
 
@@ -156,7 +156,7 @@ div.bigpower-pie-labelz {
         height: 30vh;
         margin-top: 1vh;
         aspect-ratio: 1;
-        background-image: conic-gradient(transparent, #E1DCDC 0.5deg, #E1DCDC 36deg, transparent 37deg, #e1dcdc3a 37deg, #e1dcdc3a 360deg, transparent 360deg);
+        background-image: conic-gradient(transparent, var(--text-color) 0.5deg, var(--text-color) 36deg, transparent 37deg, #e1dcdc3a 37deg, #e1dcdc3a 360deg, transparent 360deg);
         border-radius: 50%;
     }
 

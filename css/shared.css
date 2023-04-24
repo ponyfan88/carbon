@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Heebo', 'Roboto', sans-serif;
-    color: #E1DCDC;
+    color: var(--text-color);
 }
 
 /*#endregion font*/
@@ -13,7 +13,7 @@ body {
 /*#region background*/
 
 html, body {
-    background-color: #313131;
+    background-color: var(--background-color);
     margin: 0;
 }
 
@@ -47,7 +47,7 @@ html, body {
 /*#region pretty links*/
 
 a {
-    color: #E1DCDC;
+    color: var(--text-color);
     text-decoration: none;
     transition: color 400ms;
 }

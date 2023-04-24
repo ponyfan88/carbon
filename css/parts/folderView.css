@@ -1,6 +1,6 @@
 * {
     font-family: 'Heebo', 'Roboto', sans-serif;
-    color: #E1DCDC;
+    color: var(--text-color);
 
     transition: padding-left 400ms;
 
@@ -9,7 +9,7 @@
 }
 
 button {
-    color: #1E2323;
+    color: var(--darkest-color);
 }
 
 ul[role="tree"] {
@@ -57,18 +57,18 @@ ul[role="tree"] li {
 
 [role="treeitem"][aria-selected="true"] {
     padding-left: 0.75vh;
-    border-left: 0.75vh solid #E1DCDC; /*005a9c*/
+    border-left: 0.75vh solid var(--text-color); /*005a9c*/
 }
 
 [role="treeitem"].focus,
 [role="treeitem"] span.focus {
-    border-color: #E1DCDC;
+    border-color: var(--text-color);
 }
 
 [role="treeitem"].hover,
 [role="treeitem"] span:hover {
     padding-left: 0.75vh;
-    border-left: 0.75vh solid #E1DCDC; /*333*/
+    border-left: 0.75vh solid var(--text-color) /*333*/
 }
 
 [role="treeitem"].doc::before {
@@ -85,7 +85,7 @@ img.dino {
     bottom: 2vh;
     position: absolute;
 
-    aspect-ratio: 0.75;
+    aspect-ratio: 1;
 
     object-fit: contain;
     object-position: bottom;

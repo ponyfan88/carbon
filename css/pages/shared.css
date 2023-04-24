@@ -15,7 +15,7 @@ div.page-horizontal-line {
     width: 100vw;
     height: 1vh;
     margin-top: 1vh;
-    background-color: #E1DCDC;
+    background-color: var(--text-color);
 }
 
 /*

@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+body {
+    font-family: 'Heebo', 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
 html, body {
     height: 100%;
     width: 100%;
-    background-color: #313131;
+    background-color: var(--background-color); /*(useless)*/
     margin: 0;
 
     overflow: hidden;
@@ -14,12 +22,12 @@ html, body {
     width: 0vw;
     height: 100vh;
     
-    border-right: 1vh #E1DCDC solid;
+    border-right: 1vh var(--text-color) solid;
 
     overflow: hidden;
 
     transition: width 400ms;
-    background-color: #313131;
+    background-color: #609966;
 }
 
 #innerFolderView {
@@ -38,7 +46,11 @@ html, body {
 #expandFolderViewButton {
     position: fixed;
     left: 0;
+
+    padding: 0;
     padding-left: 1vh;
+    padding-right: 1vh;
+
     top: 1vh;
     z-index: 101;
 
@@ -46,7 +58,7 @@ html, body {
 
     transition: left 400ms;
 
-    background-color: #E1DCDC;
+    background-color: var(--text-color);
     border: 0;
     width: 5vh;
     height: 2.5vh;
@@ -55,11 +67,14 @@ html, body {
     border-bottom-right-radius: 2vh;
 
     transition: width cubic-bezier(0,1,1,1) 500ms, left 400ms;
+
+    line-height: 0;
+    margin: 0;
 }
 
 #expandFolderViewButton:hover {
     width: 7vh;
-    background-color: #ded7d7;
+    background-color: #9DC08B;
 }
 
 /*
