@@ -23,3 +23,94 @@
 .mla-title {
     text-align: center;
 }
+
+.big-printer-thing {
+    position: relative;
+}
+
+/*#region chromebook*/
+
+.chromebook-container {
+    position: relative;
+    top: 67vw;
+    width: 50vw;
+}
+
+.chromebook-img-container {
+    position: absolute;
+    width: 50vw;
+}
+
+.chromebook-img-container > img {
+    width: 100%;
+}
+
+.chromebook-video {
+    position: absolute;
+    top: 4.33vw;
+    left: 9.55vw;
+    width: 31.3vw;
+    
+    aspect-ratio: 16/9;
+}
+
+.chromebook-video-container {
+    position: absolute;
+}
+
+/*#endregion chromebook*/
+
+/*#region document*/
+
+.document-container {
+    position: absolute;
+    background-color: var(--really-epic-color);
+    padding: 2vh;
+
+    font-size: 2vh;
+}
+
+/*#endregion document*/
+
+@media (max-aspect-ratio: 1/1) {
+    /* on vertically oriented devices */
+    
+    .document-container {
+        top: calc(67vw + 12vw + 50vw);
+        width: 80vw;
+        left: 50vw;
+        transform: translateX(-50%);
+    }
+
+    .document-larger-text {
+        font-size: 3.5vw;
+        text-align: justify;
+    }
+}
+
+@media (min-aspect-ratio: 1/1) {
+    /* on horizontally oriented devices */
+
+    .document-container {
+        top: calc(67vw + 12vw);
+        width: 40vw;
+        left: 51.5vw;
+    }
+
+    .document-larger-text {
+        font-size: 1.76vw;
+        text-align: justify;
+    }
+}
+
+@media (min-aspect-ratio: 21/9) {
+    /* ULTRAWIDE */
+
+    
+}
+
+@media (max-aspect-ratio: 1/2) {
+    /* ULTRATALL */
+
+    
+}
