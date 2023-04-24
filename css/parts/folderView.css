@@ -85,9 +85,10 @@ ul[role="tree"] li {
 
 img.dino {
     margin-left: 2vh;
-    width: calc(35vh - 4vh);
+    width: calc(35vh - 6vh);
     bottom: 2vh;
     position: absolute;
+    padding: 1vh;
 
     aspect-ratio: 1;
 
@@ -96,5 +97,10 @@ img.dino {
 
     image-rendering: pixelated;
 
-    filter: blur(0.5px);
+    filter: drop-shadow(0 0 0.5vh black);
+
+}
+
+img.dino:hover {
+    filter: drop-shadow(0 0 0.5vh var(--gold));
 }

@@ -74,7 +74,7 @@ html, body {
 
 #expandFolderViewButton:hover {
     width: 7vh;
-    background-color: #9DC08B;
+    background-color: var(--hover-color);
 }
 
 /*
